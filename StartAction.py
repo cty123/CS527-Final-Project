@@ -5,9 +5,12 @@ START_ERROR = 1
 
 
 class StartAction(GDBAction):
-    def __init__(self, gdb):
+    def __init__(self, gdb, input_file):
         super().__init__(gdb)
-        self.cmd = 'start'
+        if input_file is None:
+            self.cmd = 'start'
+        else:
+            self.cmd = 'start < ' + input_file
         self.execute_command()
 
     def handle_result(self, data):

@@ -18,16 +18,17 @@ class FunctionCall:
 
 
 class ProgramController:
-    def __init__(self, gdb):
+    def __init__(self, gdb, input_file):
         self.gdb = gdb
         # Initialize call stack
         main_func = FunctionCall("0xmain", "main", [], None)
         self.last_func = main_func
         self.stack = main_func
+        self.input_file = input_file
 
     def start(self):
         # Start Program
-        start_status = StartAction(self.gdb).res
+        start_status = StartAction(self.gdb, self.input_file).res
         if start_status != START_SUCCESS:
             print("Error... Exiting")
 
