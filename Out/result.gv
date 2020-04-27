@@ -1,0 +1,163 @@
+digraph {
+	main [label=<
+    <table border="0">
+        <tr><td align="text" border="1">main</td></tr>
+        <tr><td align="text">addr: 0xmain</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: None</td></tr>
+    </table>
+    > shape=box]
+	main_0xmain_1 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">func1</td></tr>
+        <tr><td align="text">addr: 0x00005555555546de</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x1', '1')</td></tr>
+        <tr><td align="text">rsi: ('0x7fffffffe4d8', '140737488348376')</td></tr>
+        <tr><td align="text">rdx: ('0x7fffffffe4e8', '140737488348392')</td></tr>
+        <tr><td align="text">rcx: ('0x555555554750', '93824992233296')</td></tr>
+        <tr><td align="text">r8: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
+        <tr><td align="text">r9: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
+        <tr><td align="text">rip: 0x5555555546de</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0xb', '11')</td></tr>
+    </table>
+    > shape=box]
+	main -> main_0xmain_1
+	main_0xmain_2 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">func3</td></tr>
+        <tr><td align="text">addr: 0x000055555555468e</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x7b', '123')</td></tr>
+        <tr><td align="text">rsi: ('0x55555555483a', '93824992233530')</td></tr>
+        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
+        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x55555555468e</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0x7b', '123')</td></tr>
+    </table>
+    > shape=box]
+	main -> main_0xmain_2
+	main_0xmain_3 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">\"res</td></tr>
+        <tr><td align="text">addr: __printf</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x55555555483c', '93824992233532')</td></tr>
+        <tr><td align="text">rsi: ('0x7b', '123')</td></tr>
+        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
+        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0xa', '10')</td></tr>
+    </table>
+    > shape=box]
+	main -> main_0xmain_3
+	func3_0x000055555555468e_4 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">\"Inside</td></tr>
+        <tr><td align="text">addr: __printf</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x5555555547d8', '93824992233432')</td></tr>
+        <tr><td align="text">rsi: ('0x7b', '123')</td></tr>
+        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
+        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0x23', '35')</td></tr>
+    </table>
+    > shape=box]
+	main_0xmain_2 -> func3_0x000055555555468e_4
+	func1_0x00005555555546de_5 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">\"Inside</td></tr>
+        <tr><td align="text">addr: _IO_puts</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x555555554824', '93824992233508')</td></tr>
+        <tr><td align="text">rsi: ('0x7fffffffe4d8', '140737488348376')</td></tr>
+        <tr><td align="text">rdx: ('0x7fffffffe4e8', '140737488348392')</td></tr>
+        <tr><td align="text">rcx: ('0x555555554750', '93824992233296')</td></tr>
+        <tr><td align="text">r8: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
+        <tr><td align="text">r9: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a649c0</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0xd', '13')</td></tr>
+    </table>
+    > shape=box]
+	main_0xmain_1 -> func1_0x00005555555546de_5
+	func1_0x00005555555546de_6 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">func2</td></tr>
+        <tr><td align="text">addr: 0x00005555555546b6</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0xc', '12')</td></tr>
+        <tr><td align="text">rsi: ('0x555555554824', '93824992233508')</td></tr>
+        <tr><td align="text">rdx: ('0x7ffff7dd18c0', '140737351850176')</td></tr>
+        <tr><td align="text">rcx: ('0x555555554830', '93824992233520')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x5555555546b6</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0x159', '345')</td></tr>
+    </table>
+    > shape=box]
+	main_0xmain_1 -> func1_0x00005555555546de_6
+	func1_0x00005555555546de_7 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">\"Result</td></tr>
+        <tr><td align="text">addr: __printf</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x555555554831', '93824992233521')</td></tr>
+        <tr><td align="text">rsi: ('0x159', '345')</td></tr>
+        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
+        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0xb', '11')</td></tr>
+    </table>
+    > shape=box]
+	main_0xmain_1 -> func1_0x00005555555546de_7
+	func2_0x00005555555546b6_8 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">\"Inside</td></tr>
+        <tr><td align="text">addr: __printf</td></tr>
+        <tr><td align="text">params: []</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x555555554800', '93824992233472')</td></tr>
+        <tr><td align="text">rsi: ('0xc', '12')</td></tr>
+        <tr><td align="text">rdx: ('0x7ffff7dd18c0', '140737351850176')</td></tr>
+        <tr><td align="text">rcx: ('0x555555554830', '93824992233520')</td></tr>
+        <tr><td align="text">r8: ('0x0', '0')</td></tr>
+        <tr><td align="text">r9: ('0x0', '0')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rax: ('0x23', '35')</td></tr>
+    </table>
+    > shape=box]
+	func1_0x00005555555546de_6 -> func2_0x00005555555546b6_8
+}
