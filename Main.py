@@ -6,14 +6,6 @@ from ProgramController import ProgramController
 import sys
 
 
-def start_program(gdb):
-    start_res = gdb.write("start")
-    for data in start_res:
-        if data['type'] == 'result' and data['message'] == 'running':
-            return GetStackAction(gdb)
-    return None
-
-
 if __name__ == '__main__':
 
     # Check if arguments are passed
