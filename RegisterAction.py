@@ -25,6 +25,5 @@ class RegisterAction(GDBAction):
             return
 
         for i in range(0, len(console_output), 3):
-            r, r_addr = console_output[i].split()
-            value = console_output[i+1].replace('\\t', '')
-            self.res[r] = (r_addr, value)
+            r, r_addr, r_val = console_output[i].replace('\\n', '').split()
+            self.res[r] = (r_addr, r_val)
