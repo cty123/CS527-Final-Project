@@ -18,120 +18,154 @@ digraph {
 	main_0xmain_1 [label=<
     <table border="0">
         <tr><td align="text" border="1">func1</td></tr>
-        <tr><td align="text">addr: 0x00005555555546de</td></tr>
+        <tr><td align="text">addr: 0x000055555555468e</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
         <tr><td align="text">rdi: ('0x1', '1')</td></tr>
-        <tr><td align="text">rsi: ('0x7fffffffe428', '140737488348200')</td></tr>
-        <tr><td align="text">rdx: ('0x7fffffffe438', '140737488348216')</td></tr>
-        <tr><td align="text">rcx: ('0x555555554750', '93824992233296')</td></tr>
+        <tr><td align="text">rsi: ('0x7fffffffe438', '140737488348216')</td></tr>
+        <tr><td align="text">rdx: ('0x7fffffffe448', '140737488348232')</td></tr>
+        <tr><td align="text">rcx: ('0x5555555546d0', '93824992233168')</td></tr>
         <tr><td align="text">r8: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
         <tr><td align="text">r9: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
-        <tr><td align="text">rip: 0x5555555546de</td></tr>
+        <tr><td align="text">rip: 0x55555555468e</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0xb', '11')</td></tr>
+        <tr><td align="text">rax: ('0x4', '4')</td></tr>
     </table>
     > shape=box]
 	main -> main_0xmain_1
 	main_0xmain_2 [label=<
     <table border="0">
-        <tr><td align="text" border="1">func3</td></tr>
-        <tr><td align="text">addr: 0x000055555555468e</td></tr>
+        <tr><td align="text" border="1">at</td></tr>
+        <tr><td align="text">addr: __GI___libc_malloc</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0x7b', '123')</td></tr>
-        <tr><td align="text">rsi: ('0x55555555483a', '93824992233530')</td></tr>
+        <tr><td align="text">rdi: ('0x14', '20')</td></tr>
+        <tr><td align="text">rsi: ('0x555555554754', '93824992233300')</td></tr>
         <tr><td align="text">rdx: ('0x0', '0')</td></tr>
         <tr><td align="text">rcx: ('0x0', '0')</td></tr>
         <tr><td align="text">r8: ('0x0', '0')</td></tr>
         <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x55555555468e</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a7b070</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0x7b', '123')</td></tr>
+        <tr><td align="text">rax: ('0x555555757270', '93824994341488')</td></tr>
     </table>
     > shape=box]
 	main -> main_0xmain_2
-	main_0xmain_3 [label=<
+	func1_0x000055555555468e_3 [label=<
     <table border="0">
         <tr><td align="text" border="1">__printf</td></tr>
-        <tr><td align="text">addr: 0x55555555483c</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a48f26</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0x55555555483c', '93824992233532')</td></tr>
-        <tr><td align="text">rsi: ('0x7b', '123')</td></tr>
-        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
-        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
-        <tr><td align="text">r8: ('0x0', '0')</td></tr>
-        <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0xa', '10')</td></tr>
+        <tr><td align="text">rax: ('0x4', '4')</td></tr>
     </table>
     > shape=box]
-	main -> main_0xmain_3
-	func3_0x000055555555468e_4 [label=<
+	main_0xmain_1 -> func1_0x000055555555468e_3
+	__printf_0x00007ffff7a48f26_4 [label=<
     <table border="0">
-        <tr><td align="text" border="1">__printf</td></tr>
-        <tr><td align="text">addr: 0x5555555547d8</td></tr>
+        <tr><td align="text" border="1">_IO_vfprintf_internal</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a3f534</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0x5555555547d8', '93824992233432')</td></tr>
-        <tr><td align="text">rsi: ('0x7b', '123')</td></tr>
-        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
-        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
-        <tr><td align="text">r8: ('0x0', '0')</td></tr>
-        <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0x23', '35')</td></tr>
+        <tr><td align="text">rax: ('0x4', '4')</td></tr>
     </table>
     > shape=box]
-	main_0xmain_2 -> func3_0x000055555555468e_4
-	func1_0x00005555555546de_5 [label=<
+	func1_0x000055555555468e_3 -> __printf_0x00007ffff7a48f26_4
+	_IO_vfprintf_internal_0x00007ffff7a3f534_5 [label=<
     <table border="0">
-        <tr><td align="text" border="1">func2</td></tr>
-        <tr><td align="text">addr: 0x00005555555546b6</td></tr>
+        <tr><td align="text" border="1">_IO_new_file_xsputn</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a6f9ed</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0xc', '12')</td></tr>
-        <tr><td align="text">rsi: ('0x555555554824', '93824992233508')</td></tr>
-        <tr><td align="text">rdx: ('0x7ffff7dd18c0', '140737351850176')</td></tr>
-        <tr><td align="text">rcx: ('0x555555554830', '93824992233520')</td></tr>
-        <tr><td align="text">r8: ('0x0', '0')</td></tr>
-        <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x5555555546b6</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0x159', '345')</td></tr>
+        <tr><td align="text">rax: ('0x4', '4')</td></tr>
     </table>
     > shape=box]
-	main_0xmain_1 -> func1_0x00005555555546de_5
-	func1_0x00005555555546de_6 [label=<
+	__printf_0x00007ffff7a48f26_4 -> _IO_vfprintf_internal_0x00007ffff7a3f534_5
+	_IO_new_file_xsputn_0x00007ffff7a6f9ed_6 [label=<
     <table border="0">
-        <tr><td align="text" border="1">__printf</td></tr>
-        <tr><td align="text">addr: 0x555555554831</td></tr>
+        <tr><td align="text" border="1">_IO_new_file_overflow</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a71498</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0x555555554831', '93824992233521')</td></tr>
-        <tr><td align="text">rsi: ('0x159', '345')</td></tr>
-        <tr><td align="text">rdx: ('0x0', '0')</td></tr>
-        <tr><td align="text">rcx: ('0x0', '0')</td></tr>
-        <tr><td align="text">r8: ('0x0', '0')</td></tr>
-        <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0xb', '11')</td></tr>
+        <tr><td align="text">rax: ('0x0', '0')</td></tr>
     </table>
     > shape=box]
-	main_0xmain_1 -> func1_0x00005555555546de_6
-	func2_0x00005555555546b6_7 [label=<
+	_IO_vfprintf_internal_0x00007ffff7a3f534_5 -> _IO_new_file_xsputn_0x00007ffff7a6f9ed_6
+	_IO_new_file_overflow_0x00007ffff7a71498_7 [label=<
     <table border="0">
-        <tr><td align="text" border="1">__printf</td></tr>
-        <tr><td align="text">addr: 0x555555554800</td></tr>
+        <tr><td align="text" border="1">__GI__IO_doallocbuf</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a72379</td></tr>
         <tr><td align="text" border="1">Entrance Registers</td></tr>
-        <tr><td align="text">rdi: ('0x555555554800', '93824992233472')</td></tr>
-        <tr><td align="text">rsi: ('0xc', '12')</td></tr>
-        <tr><td align="text">rdx: ('0x7ffff7dd18c0', '140737351850176')</td></tr>
-        <tr><td align="text">rcx: ('0x555555554830', '93824992233520')</td></tr>
-        <tr><td align="text">r8: ('0x0', '0')</td></tr>
-        <tr><td align="text">r9: ('0x0', '0')</td></tr>
-        <tr><td align="text">rip: 0x7ffff7a48e80</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
         <tr><td align="text" border="1">Exit Registers</td></tr>
-        <tr><td align="text">rax: ('0x23', '35')</td></tr>
+        <tr><td align="text">rax: ('0x1', '1')</td></tr>
     </table>
     > shape=box]
-	func1_0x00005555555546de_5 -> func2_0x00005555555546b6_7
+	_IO_new_file_xsputn_0x00007ffff7a6f9ed_6 -> _IO_new_file_overflow_0x00007ffff7a71498_7
+	__GI__IO_doallocbuf_0x00007ffff7a72379_8 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">__GI__IO_file_doallocate</td></tr>
+        <tr><td align="text">addr: 0x00007ffff7a6218c</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: None</td></tr>
+        <tr><td align="text">rsi: None</td></tr>
+        <tr><td align="text">rdx: None</td></tr>
+        <tr><td align="text">rcx: None</td></tr>
+        <tr><td align="text">r8: None</td></tr>
+        <tr><td align="text">r9: None</td></tr>
+        <tr><td align="text">rip: None</td></tr>
+        <tr><td align="text" border="1">Exit Registers</td></tr>
+        <tr><td align="text">rax: ('0x1', '1')</td></tr>
+    </table>
+    > shape=box]
+	_IO_new_file_overflow_0x00007ffff7a71498_7 -> __GI__IO_doallocbuf_0x00007ffff7a72379_8
+	__GI__IO_file_doallocate_0x00007ffff7a6218c_9 [label=<
+    <table border="0">
+        <tr><td align="text" border="1">at</td></tr>
+        <tr><td align="text">addr: __GI___libc_malloc</td></tr>
+        <tr><td align="text" border="1">Entrance Registers</td></tr>
+        <tr><td align="text">rdi: ('0x1000', '4096')</td></tr>
+        <tr><td align="text">rsi: ('0x7fffffffdb90', '140737488346000')</td></tr>
+        <tr><td align="text">rdx: ('0x7fffffffdb90', '140737488346000')</td></tr>
+        <tr><td align="text">rcx: ('0x7ffff7af37c3', '140737348843459')</td></tr>
+        <tr><td align="text">r8: ('0x7ffff7fd14c0', '140737353946304')</td></tr>
+        <tr><td align="text">r9: ('0x7ffff7dd0d80', '140737351847296')</td></tr>
+        <tr><td align="text">rip: 0x7ffff7a7b070</td></tr>
+        <tr><td align="text" border="1">Exit Registers</td></tr>
+        <tr><td align="text">rax: ('0x555555756260', '93824994337376')</td></tr>
+    </table>
+    > shape=box]
+	__GI__IO_doallocbuf_0x00007ffff7a72379_8 -> __GI__IO_file_doallocate_0x00007ffff7a6218c_9
 }

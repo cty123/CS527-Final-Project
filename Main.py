@@ -32,10 +32,6 @@ if __name__ == '__main__':
     gdb = GdbController()
     res = gdb.write("file " + program_name)
 
-    # Set break points
-    for f in watch_list:
-        BreakPointAction(gdb, f)
-
     # Start Program execution
-    program = ProgramController(gdb, input_file)
+    program = ProgramController(gdb, watch_list, input_file)
     program.start()

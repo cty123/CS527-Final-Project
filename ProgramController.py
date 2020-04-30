@@ -1,3 +1,4 @@
+from BreakPointAction import BreakPointAction
 from ContinueAction import ContinueAction, PROGRAM_BREAKPOINT
 from FinishAction import FinishAction, FINISH_MAIN
 from GetStackAction import GetStackAction
@@ -18,12 +19,13 @@ class FunctionCall:
 
 
 class ProgramController:
-    def __init__(self, gdb, input_file):
+    def __init__(self, gdb, watch_list, input_file):
         self.gdb = gdb
         # Initialize call stack
         main_func = FunctionCall("0xmain", "main", [], None)
         self.last_func = main_func
         self.stack = main_func
+        self.watch_list = watch_list
         self.input_file = input_file
 
     def start(self):
@@ -31,6 +33,10 @@ class ProgramController:
         start_status = StartAction(self.gdb, self.input_file).res
         if start_status != START_SUCCESS:
             print("Error... Exiting")
+
+        # Set break points
+        for f in self.watch_list:
+            BreakPointAction(self.gdb, f)
 
         # Continue to next function
         continue_status = ContinueAction(self.gdb).res
