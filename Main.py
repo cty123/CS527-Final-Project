@@ -1,7 +1,6 @@
 from pygdbmi.gdbcontroller import GdbController
 
 from BreakPointAction import BreakPointAction
-from GetStackAction import GetStackAction
 from ProgramController import ProgramController
 import sys
 
